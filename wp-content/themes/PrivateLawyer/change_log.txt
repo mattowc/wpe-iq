@@ -1,0 +1,18 @@
+25th March 2011  (v:1.0.2)
+---------------------------------------------------------
+blog listing - reverse order post problem - solved
+-----------------------------------------------------------
+admin/functions/hooks.php
+admin/widgets/testimonials.php
+library/functions/custom_functions.php
+
+
+23th - March - 2011 (v:1.0.1)
+---------------------------------------------
+Gallery page template image resize removed
+---------------------------------------------
+library/tpl/tpl_gallery_page.php
+
+
+
+March 08, 2011 - Fresh release

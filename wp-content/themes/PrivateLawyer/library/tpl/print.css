@@ -1,0 +1,13 @@
+.top_navigation, .header, .search_section, .sidebar, #comments, .bottom, .comments, .like_this, .post-navigation, .main_nav, .post-meta-single, .breadcrumb, .sidebar {
+  display: none !important;
+}
+
+.singleh1 { line-height:normal; }
+body, {
+  float: none !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border:none !important;
+}
+ 
