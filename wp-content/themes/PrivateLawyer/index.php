@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header(); // git testing ?>
 	<!-- BOF Slider -->		
 	 <?php templ_home_page_slider(); //home header slider ?>    
 	
