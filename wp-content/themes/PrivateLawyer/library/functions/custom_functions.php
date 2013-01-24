@@ -241,7 +241,7 @@ class templ_anything_slider extends WP_Widget {
  	<?php } } ?>   
     
 				<h2 class="title"><a class="widget-title" href="/contact-us/schedule-a-free-consultation/"><?php the_title(); ?></a></h2>
-                  <p><?php the_content(); ?> </p>
+                  <?php the_content(); ?> 
                 
                
                 
