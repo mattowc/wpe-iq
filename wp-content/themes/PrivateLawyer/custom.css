@@ -228,6 +228,22 @@ table.shop_table
 .options li {
   font-size: 16px;
 }
+
+/*
+Footer styling
+*/
+.row {
+  clear: both;
+  display: block;
+  width: 100%;
+}
+.column {
+  display: inline-block;
+  float: left;
+}
+.column-3 {
+  width: 30%;
+}
 /*
 Bootstrap
 */
