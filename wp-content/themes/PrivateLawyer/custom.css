@@ -232,7 +232,7 @@ table.shop_table
 /*
 Footer styling
 */
-.footer-inner {
+.footer_inner {
   display: inline-block;
 }
 .row {
@@ -242,6 +242,7 @@ Footer styling
 .column {
   display: inline-block;
   float: left;
+  font-size: 14px;
 }
 .column-3 {
   width: 300px;
@@ -250,6 +251,7 @@ Footer styling
 .column h3 {
   font-size: 18px;
 }
+
 /*
 Bootstrap
 */

@@ -7,12 +7,19 @@
             <div class="row">
                 <div class="column column-3">
                     <h3>About</h3>
+                    <p>IQ Express, by Learning Technics, is a learning program for treating and curing learning problems like ADHD, Dyslexia, Auditory Processing Disorder, Dysgraphia, and other learning disabilities. It uses a technique called Physio-Neuro therapy to help rewire the brain. Fully utilizing the brain's ability to heal itself, neuroplasticity.</p>
                 </div>
                 <div class="column column-3">
                     <h3>Support</h3>
+                    <a href="/faqs/">FAQs</a>
                 </div>
                 <div class="column column-3">
                     <h3>Contact</h3>
+                    <ul>
+                        <li>Phone: 800-893-9315</li>
+                        <li>Email: support@iq-express.com</li>
+                        <li>Hours: M-F 10-6pm MST</li>
+                    </ul>
                 </div>
             </div>
         	<div class="footer_inner"> 
