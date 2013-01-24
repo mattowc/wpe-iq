@@ -233,7 +233,6 @@ table.shop_table
 Footer styling
 */
 .row {
-  clear: both;
   display: block;
   width: 100%;
 }
