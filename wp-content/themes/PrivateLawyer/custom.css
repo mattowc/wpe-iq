@@ -232,6 +232,9 @@ table.shop_table
 /*
 Footer styling
 */
+.footer-inner {
+  display: inline-block;
+}
 .row {
   display: block;
   width: 100%;
@@ -241,7 +244,11 @@ Footer styling
   float: left;
 }
 .column-3 {
-  width: 30%;
+  width: 300px;
+  margin-right: 8px;
+}
+.column h3 {
+  font-size: 18px;
 }
 /*
 Bootstrap
