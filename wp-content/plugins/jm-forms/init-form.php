@@ -6,7 +6,7 @@
  * @author Jonathon McDonald <jon@onewebcentric.com>
  */
 
-add_action('wp_head', 'check_forms');
+add_action('plugins_loaded', 'check_forms');
 
 function check_forms() {
 if( isset( $_POST['jam-form-hidden'] ) ) {
