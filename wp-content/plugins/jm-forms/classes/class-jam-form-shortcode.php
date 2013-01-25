@@ -22,7 +22,7 @@ class Jam_Form_Shortcode
 			)
 		);
 
-		$file = file_get_contents( $name . '.html' );
+		$file = file_get_contents( $name . '.html', FILE_USE_INCLUDE_PATH );
 
 		return $file;
 	}
