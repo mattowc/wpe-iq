@@ -22,7 +22,8 @@ class Jam_Form_Shortcode
 			)
 		);
 
-		$file = file_get_contents( '../view/' . $name . '.html' );
+		$file = file_get_contents( $name . '.html' );
+
 		return $file;
 	}
 }
