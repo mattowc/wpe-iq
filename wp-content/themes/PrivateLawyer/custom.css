@@ -118,21 +118,21 @@ p.button
 p.button3
 {
   position: absolute;
-  top: 480px;
+  bottom: 20px;
   right: 80px;
 }
 
 p.button2
 {
   position: absolute;
-  top: 480px;
+  bottom: 20px;
   left: 455px;
 }
 
 p.button1
 {
   position: absolute;
-  top: 480px;
+  bottom: 20px;
   left: 95px;
 }
 

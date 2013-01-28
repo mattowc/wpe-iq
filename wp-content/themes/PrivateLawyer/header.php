@@ -3,7 +3,6 @@
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" >
-    <meta name="viewport" content="width=978px">
     <title><?php wp_title ( '|', true,'right' ); ?></title>
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
