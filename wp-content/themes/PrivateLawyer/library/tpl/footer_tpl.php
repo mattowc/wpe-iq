@@ -11,7 +11,8 @@
                 </div>
                 <div class="column column-3">
                     <h3>Support</h3>
-                    <a href="/faqs/">FAQs</a>
+                    <a href="/faqs/">FAQs</a><br />
+                    <a href="/contact-us/">Contact</a><br />
                 </div>
                 <div class="column column-3">
                     <h3>Contact</h3>
