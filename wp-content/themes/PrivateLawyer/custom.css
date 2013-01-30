@@ -251,12 +251,12 @@ Footer styling
 .column h3 {
   font-size: 18px;
   margin-bottom: 5px;
-  color: #000;
 }
 
 .column p {
   float: left;
   display: inline-block;
+  color: #000;
 }
 
 .column img {
