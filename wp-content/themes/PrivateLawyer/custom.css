@@ -254,6 +254,17 @@ Footer styling
   color: #000;
 }
 
+.column p {
+  float: left;
+  display: inline-block;
+}
+
+.column img {
+  float: left;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
 /*
 Bootstrap
 */
