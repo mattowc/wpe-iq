@@ -265,6 +265,10 @@ Footer styling
   margin-bottom: 5px;
   display: inline-block;
 }
+
+.column ul li {
+  color: #000;
+}
 /*
 Bootstrap
 */
