@@ -9,14 +9,14 @@ Author URI:  http://onwebcentric.com
 
 $jm_order_shipping = 0;
 
-function jm_process_order( $order_id, $this->posted )
+function jm_process_order( $order_id, $posted )
 {
-	global $jm_order_shipping;
+	global $jm_order_shipping, $woocommerce;
 
-	if( WC_Subscriptions_Order::order_contains_subscription( $order ) && !WC_Subscriptions_Renewal_Order::is_renewal( $order->id ) )
+	if( WC_Subscriptions_Order::order_contains_subscription( $order_id ) && !WC_Subscriptions_Renewal_Order::is_renewal( $order_id ) )
 	{
 		add_filter( 'woocommerce_order_amount_total', 'jm_fix_price' );
-		$jm_order_shipping = $order->order_shipping;
+		$jm_order_shipping = $woocommerce->cart->shipping_total;
 	}
 }
 
