@@ -15,9 +15,6 @@ function jm_mine_func( $total )
 
 	if ( 'sign_up_fee' == WC_Subscriptions_Cart::$recalculation_type )
 	{
-			// We've requested totals be recalculated with sign up fee only, we need to remove anything shipping related from the sign-up fee totals
-			$total = $total + $woocommerce->cart->shipping_tax_total + $woocommerce->cart->shipping_total;
-
-			return $total;
+			WC_Subscriptions_Cart::$recalculation_type = 'none';
 	}
 }
