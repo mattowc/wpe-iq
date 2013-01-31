@@ -13,7 +13,7 @@ function jm_process_order( $order_id, $posted )
 {
 	global $jm_order_shipping, $woocommerce;
 
-	if( WC_Subscriptions_Order::order_contains_subscription( $order_id ) )
+	if( !WC_Subscriptions_Order::order_contains_subscription( $order_id ) )
 	{
 		add_filter( 'woocommerce_order_amount_total', 'jm_fix_price', 100 );
 		$jm_order_shipping = $woocommerce->cart->shipping_total;
