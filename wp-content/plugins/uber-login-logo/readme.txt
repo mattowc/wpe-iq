@@ -1,9 +1,9 @@
 === Uber Login Logo ===
 Contributors: uberweb
 Tags: login, logo, login logo, admin, customisation, customization, custom login, media uploader, AJAX, wp-login
-Requires at least: 3.0
-Tested up to: 3.4
-Stable tag: 0.4
+Requires at least: 3.5
+Tested up to: 3.5
+Stable tag: 0.5
 
 A simple, lightweight WordPress plugin to change your login logo.
 
@@ -25,6 +25,10 @@ Download and activate from the Plugins page of your WordPress site.
 
 I'd like to keep this plugin simple, but if you think you have a good idea leave a comment on the [plugin page](http://www.uberweb.com.au/uber-login-logo-wordpress-plugin/) and I'll at least consider it.
 
+= This plugin does not work on my WordPress installation =
+
+As of 0.5 This plugin makes use of the new media editor introduced in WordPress 3.5.  If you are having issues try installing version 0.4, or better yet, updating your WordPress.
+
 == Screenshots ==
 
 1. How awesome your login screen could look after using this plugin.
@@ -33,18 +37,23 @@ I'd like to keep this plugin simple, but if you think you have a good idea leave
 
 == Changelog ==
 
-= Version 0.1 =
+= Version 0.5 =
 
-* The first release.
+* javascript entirely rewritten to make use of the new media editor in WP 3.5.
 
-= Version 0.2 =
+= Version 0.4 =
 
-* Compatible up to 3.3.1 (and probably beyond).
+* Updated CSS for better compatibility with WordPress 3.4.
 
 = Version 0.3 =
 
 * Updated the link to the home URL for Jamie.
 
-= Version 0.4 =
+= Version 0.2 =
 
-* Updated CSS for better compatibility with WordPress 3.4.
+* Compatible up to 3.3.1 (and probably beyond).
+
+= Version 0.1 =
+
+* The first release.
+
