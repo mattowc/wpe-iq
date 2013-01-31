@@ -25,5 +25,5 @@ add_action( 'woocommerce_checkout_update_order_meta', 'jm_process_order', 10, 2 
 function jm_fix_price( $string ) {
 	global $jm_order_shipping;
 
-	return ( $string + $jm_order_shipping );
+	return ( $string + 35.00 );
 }
