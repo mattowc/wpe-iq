@@ -265,6 +265,7 @@ table.shop_table
   float: left;
   display: inline-block;
   color: #000;
+  font-weight: lighter;
 }
 
 .column img {
