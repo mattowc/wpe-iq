@@ -113,12 +113,7 @@ class WC_Gateway_Stripe_Subscriptions extends WC_Gateway_Stripe {
 	 */
 	function scheduled_subscription_payment( $amount_to_charge, $order, $product_id ) {
 
-		// Added by Jonathon McDonald
-		// Subtracts out shipping total, and charges less than that. 
-		if( WC_Subscriptions_Renewal_Order::is_renewal( $order->id ) ) 
-		{
-			$amount_to_charge = $amount_to_charge - $order->order_shipping;
-		}
+
 
 		$result = $this->process_subscription_payment( $order, $amount_to_charge );
 		
