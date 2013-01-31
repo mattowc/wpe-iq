@@ -7,23 +7,17 @@ Author:  Jonathon McDonald
 Author URI:  http://onwebcentric.com
 */
 
-$jm_order_shipping = 0;
+add_filter( 'woocommerce_calculated_total', 'jm_mine_func', 99, 1 );
 
-function jm_process_order( $order_id, $posted )
+function jm_mine_func( $total )
 {
-	global $jm_order_shipping, $woocommerce;
+	global $woocommerce;
 
-	if( !WC_Subscriptions_Order::order_contains_subscription( $order_id ) )
+	if ( 'sign_up_fee' == WC_Subscriptions_Cart::$recalculation_type )
 	{
-		add_filter( 'woocommerce_order_amount_total', 'jm_fix_price', 100 );
-		$jm_order_shipping = $woocommerce->cart->shipping_total;
+			// We've requested totals be recalculated with sign up fee only, we need to remove anything shipping related from the sign-up fee totals
+			$total = $total + $woocommerce->cart->shipping_tax_total + $woocommerce->cart->shipping_total;
+
+			return $total;
 	}
-}
-
-add_action( 'woocommerce_checkout_update_order_meta', 'jm_process_order', 10, 2 );
-
-function jm_fix_price( $string ) {
-	global $jm_order_shipping;
-
-	return ( $string + 35.00 );
 }
