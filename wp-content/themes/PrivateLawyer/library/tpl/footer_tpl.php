@@ -17,9 +17,9 @@
                 <div class="column column-3">
                     <h3>Contact</h3>
                     <ul>
-                        <li>Phone: 800-893-9315</li>
-                        <li>Email: support@iq-express.com</li>
-                        <li>Hours: M-F 10-6pm MST</li>
+                        <li><strong>Phone</strong>: 800-893-9315</li>
+                        <li><strong>Email</strong>: support@iq-express.com</li>
+                        <li><strong>Hours</strong>: M-F 10-6pm MST</li>
                     </ul>
                 </div>
             </div>
