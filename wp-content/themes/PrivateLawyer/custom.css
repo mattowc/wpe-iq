@@ -292,12 +292,12 @@ table.shop_table
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
   .panel-wrapper p {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 18px;
   }
 
   .coda-slider {
-    height: 550px !important;
+    height: 520px !important;
   }
 }
 
