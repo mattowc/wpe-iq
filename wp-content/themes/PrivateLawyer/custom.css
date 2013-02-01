@@ -292,7 +292,7 @@ table.shop_table
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
   #coda-slider-1 {
-    height: 600px;
+    height: 700px;
   }
 }
 
