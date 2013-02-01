@@ -300,8 +300,8 @@ and (max-device-width : 480px) {
     height: 520px !important;
   }
 
-  h4 {
-    font-size: 16px;
+  .content h4 {
+    font-size: 22px;
   }
 }
 
