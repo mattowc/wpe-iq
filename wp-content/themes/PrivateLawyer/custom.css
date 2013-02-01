@@ -296,7 +296,7 @@ and (max-device-width : 480px) {
     line-height: 18px;
   }
 
-  .coda-slider {
+  #coda-slider-1 {
     height: 520px !important;
   }
 }
