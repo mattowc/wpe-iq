@@ -291,8 +291,8 @@ table.shop_table
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-  #coda-slider-1 {
-    height: 700px;
+  .panel-wrapper p {
+    font-size: 12px;
   }
 }
 
