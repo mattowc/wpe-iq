@@ -301,7 +301,8 @@ and (max-device-width : 480px) {
   }
 
   .content h4 {
-    font-size: 22px;
+    font-size: 22px !important;
+    font-weight: bolder;
   }
 }
 
