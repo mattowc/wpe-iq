@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+    <style type="text/css">
+      html { height: 400px }
+      body { height: 400px; margin: 0; padding: 0 }
+      #map_canvas { height: 100% }
+      .info-title { font-weight: bolder; font-size: 15px; font-family: Arial, Helvetica, sans-serif;}
+      .info-desc { font-size: 11px; font-family: Arial, Helvetica, sans-serif;  }
+      .info-box { display: inline-block; position: relative; top: -20px; border-radius: 5px;}
+    </style>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9nCorjYWxjr3nRMJThSTTLzACDA0ZqDk&sensor=false&libraries=places">
+	</script>
+
+	<script type="text/javascript">
+		// Written by Jonathon McDonald
+		// see https://developers.google.com/maps/documentation/javascript/places
+		// "Imagination rules the world."
+		var map;
+		var service;
+		var infowindow;
+
+		// Prepares map to showcase Learning Technics locations
+		function initialize()
+		{
+			
+			// Prepare building the map by setting the options
+			var mapOptions = 
+			{
+				center: new google.maps.LatLng(40.4230, -98.7372),
+				zoom: 4,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+
+			// Initialize the map & info window
+			map = new google.maps.Map(document.getElementById("map_canvas"), 
+				mapOptions);
+
+			infowindow = new google.maps.InfoWindow;
+
+			// Now we can parse through the XML file and add the locations to the map
+			parseTheXML("markers.xml", function(data) {
+
+				// Parse the XML
+				var xml = data.responseXML;
+				var markers = xml.documentElement.getElementsByTagName("marker");
+
+				// Loop through the markers
+				for(var i = 0; i<markers.length; i++)
+				{
+					// Prepare all the relevant data
+					var name = markers[i].getAttribute("name");
+					var address = markers[i].getAttribute("address");
+					var city = markers[i].getAttribute("city");
+					var phone = markers[i].getAttribute("phone");
+					var point = new google.maps.LatLng(
+						parseFloat(markers[i].getAttribute("lat")),
+						parseFloat(markers[i].getAttribute("lng")));
+
+					// Get ready to place the marker on the map
+					var html = "<span class='info-title'>" 
+					+ name + "</span><br /><span class='info-desc'>" 
+					+ address + "<br />" 
+					+ city + "<br />" 
+					+ phone + "</span>";
+
+					var marker = new google.maps.Marker({
+						map: map,
+						position: point
+					});
+					bindInfoWindow(marker, map, infowindow, html);
+				}
+			});
+		}
+
+		// This function is used to add markers to the map, with an html
+		// panel.
+		function bindInfoWindow(marker, map, infoWindow, html)
+		{
+			google.maps.event.addListener(marker, 'click', function() {
+				infoWindow.setContent(html);
+				infoWindow.open(map, marker);
+			});
+		}
+
+		function parseTheXML(url, callback)
+		{
+			var request = window.ActiveXObject ? 
+				new ActiveXObject('Microsoft.XMLHTTP') :
+				new XMLHttpRequest;
+
+			request.onreadystatechange = function() {
+				if (request.readyState == 4)
+				{
+					request.onreadystatechange = doNothing;
+					callback(request, request.status);
+				}
+			};
+
+			request.open('GET', url, true);
+			request.send(null);
+		}
+
+		function doNothing() {}
+	</script>
+</head>
+<body onload="initialize()">
+	<div id="map_canvas" style="height: 400px; width: 100%;"></div>
+</body>
+</html>
+		
