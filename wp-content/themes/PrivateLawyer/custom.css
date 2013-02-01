@@ -295,6 +295,10 @@ and (max-device-width : 480px) {
     font-size: 14px;
     line-height: 14px;
   }
+
+  .coda-slider {
+    height: 550px !important;
+  }
 }
 
 /*
