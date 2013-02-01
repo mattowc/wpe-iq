@@ -292,7 +292,8 @@ table.shop_table
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
   .panel-wrapper p {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 14px;
   }
 }
 
