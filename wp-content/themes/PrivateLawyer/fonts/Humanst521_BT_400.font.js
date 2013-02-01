@@ -8,7 +8,7 @@ Cufon.registerFont({"w":181,"face":{"font-family":"Humanst521 BT","font-weight":
 Cufon.replace('.list .post h2 a', { hover: 'true' });
 Cufon.replace('.top_navigation_in li a', { hover: 'true' });
 Cufon.replace('h1', {textShadow: '1px 1px #45484a'});
-Cufon.replace('.coda-slider h2', {textShadow: '1px 1px #45484a'});
+Cufon.replace('.coda-slider h2:not(.no-cufon)', {textShadow: '1px 1px #45484a'});
 Cufon.replace('.list h2');
 Cufon.replace('.grid .post h2');
 Cufon.replace('h3');

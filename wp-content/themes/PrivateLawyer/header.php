@@ -27,5 +27,6 @@
 </head>
 <body <?php body_class(); ?>>
 <?php include_once(TT_TPL_ROOT_PATH.'header_tpl.php'); //header content area ?> 
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/mobilefix.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/fonts/cufon-yui.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/fonts/Humanst521_BT_400.font.js"></script>
