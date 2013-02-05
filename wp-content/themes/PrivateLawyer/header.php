@@ -19,7 +19,7 @@
     <script type="text/javascript" src="<?php bloginfo('url'); ?>/wp-content/themes/PrivateLawyer/js/jquery.fancybox-buttons.js?v=1.0.5"></script>
     <meta property="og:title" content="IQ Express by Learning Technics to IQ Express" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://iq-express.com/pricing/" />
+    <meta property="og:url" content="http://iq-express.com/" />
     <meta property="og:image" content="http://iq-express.com/wp-content/uploads/2013/01/brain.png" />
     <meta property="og:site_name" content="IQ Express" />
     <meta property="og:description" 
