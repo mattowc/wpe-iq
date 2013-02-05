@@ -322,8 +322,14 @@ and (max-device-width : 480px) {
     -webkit-transform: scale(2); /* Safari and Chrome */
     -o-transform: scale(2); /* Opera */
 
-    width: 60px;
-    height: 30px;
+    padding: 10px;
+  }
+
+  .checkbox-fix {
+    display: inline;
+    font-size: 110%;
+    margin-left: 10px;
+    margin-top: 10px;
   }
 }
 
