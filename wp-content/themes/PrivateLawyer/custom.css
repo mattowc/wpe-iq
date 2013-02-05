@@ -308,6 +308,11 @@ and (max-device-width : 480px) {
   .consultation-form p {
     width: 385px;
   }
+
+  .mobile-fix-p {
+    width: 385px;
+    font-size: 16px;
+  }
 }
 
 /*
