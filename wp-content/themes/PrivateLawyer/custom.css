@@ -304,6 +304,10 @@ and (max-device-width : 480px) {
     font-size: 32px !important;
     font-weight: bolder;
   }
+
+  .consultation-form p {
+    width: 385px;
+  }
 }
 
 /*
