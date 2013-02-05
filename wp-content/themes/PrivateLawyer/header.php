@@ -17,12 +17,17 @@
     wp_head();?>
     <script type="text/javascript" src="<?php bloginfo('url'); ?>/wp-content/themes/PrivateLawyer/js/jquery.fancybox.pack.js?v=2.1.3"></script>
     <script type="text/javascript" src="<?php bloginfo('url'); ?>/wp-content/themes/PrivateLawyer/js/jquery.fancybox-buttons.js?v=1.0.5"></script>
-    <meta property="og:title" content="IQ Express" />
+    <meta property="og:title" content="IQ Express by Learning Technics to IQ Express" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://iq-express.com" />
     <meta property="og:image" content="http://iq-express.com/wp-content/uploads/2013/01/brain.png" />
     <meta property="og:site_name" content="IQ Express" />
-    <meta property="fb:admins" content="100004473278114" />
+    <meta property="og:description" 
+    content="IQ Express, by Learning Technics, is a learning program for treating 
+    and curing learning problems like ADHD, Dyslexia, Auditory Processing Disorder, 
+    Dysgraphia, and other learning disabilities. It uses a technique called 
+    Physio-Neuro therapy to help rewire the brain. Fully utilizing the brain's ability to heal itself, 
+    neuroplasticity." />
 </head>
 <body <?php body_class(); ?>>
 <div id="fb-root"></div>
