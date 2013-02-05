@@ -80,16 +80,18 @@ if (!defined('ABSPATH')) exit; ?>
 
 <h2><?php _e('Customer details', 'woocommerce'); ?></h2>
 
+<p>
 <?php if ($order->billing_email) : ?>
-	<p><strong><?php _e('Email:', 'woocommerce'); ?></strong> <?php echo $order->billing_email; ?></p>
+	<strong><?php _e('Email:', 'woocommerce'); ?></strong> <?php echo $order->billing_email; ?>,
 <?php endif; ?>
 <?php if ($order->billing_phone) : ?>
-	<p><strong><?php _e('Tel:', 'woocommerce'); ?></strong> <?php echo $order->billing_phone; ?></p>
+	 <strong><?php _e('Tel:', 'woocommerce'); ?></strong> <?php echo $order->billing_phone; ?>
 <?php endif; ?>
 <?php $height = get_post_meta( $order->id, '_billing_height', true ); ?>
 <?php if($height) : ?>
-	<p><strong><?php _e('Height:', 'woocommerce'); ?></strong> <?php echo $height; ?></p>
+	 <strong><?php _e('Height:', 'woocommerce'); ?></strong> <?php echo $height; ?>.
 <?php endif; ?>
+</p>
 
 <?php woocommerce_get_template('emails/email-addresses.php', array( 'order' => $order )); ?>
 
