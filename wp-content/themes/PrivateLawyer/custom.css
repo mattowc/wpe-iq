@@ -321,7 +321,9 @@ and (max-device-width : 480px) {
     -moz-transform: scale(2); /* FF */
     -webkit-transform: scale(2); /* Safari and Chrome */
     -o-transform: scale(2); /* Opera */
-    padding: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
   }
 }
 
