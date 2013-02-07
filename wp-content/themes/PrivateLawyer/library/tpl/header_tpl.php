@@ -2,7 +2,13 @@
 <?php  //templ_get_top_header_navigation() ?> 
 <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('header_above')){?>
 <?php } else {?>  <?php }?>
-<div style="display: block; width: 100%; height:32px;">Hello</div>
+<div style="display: block; width: 100%; height:32px;" id="info-header">
+    <div style="display: inline-block; width: 978px; margin: 0 auto;" id="info-container">
+        <div style="float: right; margin-right: 45px; color: #6b6b6b; font-size: 18px;">
+            Call toll free or something?
+        </div>
+    </div>
+</div> <!-- End #info-header -->
 <div class="wrapper">
 	<div class="header clear">
     	<div class="header_in">
