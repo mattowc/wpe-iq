@@ -2,7 +2,7 @@
 <?php  //templ_get_top_header_navigation() ?> 
 <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('header_above')){?>
 <?php } else {?>  <?php }?>
-
+<div style="display: block; width: 100%; height:32px;">Hello</div>
 <div class="wrapper">
 	<div class="header clear">
     	<div class="header_in">
