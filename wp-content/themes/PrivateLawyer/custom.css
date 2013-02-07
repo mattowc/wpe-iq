@@ -1372,17 +1372,17 @@ input[type="button"].btn-block {
 .btn-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #efa764;
-  background-image: -moz-linear-gradient(top, #ea7202, #f7f7f7);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ea7202), to(#f7f7f7));
-  background-image: -webkit-linear-gradient(top, #ea7202, #f7f7f7);
-  background-image: -o-linear-gradient(top, #ea7202, #f7f7f7);
-  background-image: linear-gradient(to bottom, #ea7202, #f7f7f7);
+  background-color: #b56d2a;
+  background-image: -moz-linear-gradient(top, #ea7202, #666666);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ea7202), to(#666666));
+  background-image: -webkit-linear-gradient(top, #ea7202, #666666);
+  background-image: -o-linear-gradient(top, #ea7202, #666666);
+  background-image: linear-gradient(to bottom, #ea7202, #666666);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffea7202', endColorstr='#fff7f7f7', GradientType=0);
-  border-color: #f7f7f7 #f7f7f7 #d1d1d1;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffea7202', endColorstr='#ff666666', GradientType=0);
+  border-color: #666666 #666666 #404040;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #f7f7f7;
+  *background-color: #666666;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -1393,12 +1393,12 @@ input[type="button"].btn-block {
 .btn-primary.disabled,
 .btn-primary[disabled] {
   color: #ffffff;
-  background-color: #f7f7f7;
-  *background-color: #ebebeb;
+  background-color: #666666;
+  *background-color: #595959;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #dedede \9;
+  background-color: #4d4d4d \9;
 }
 .btn-warning {
   color: #ffffff;
@@ -1606,3 +1606,4 @@ input[type="submit"].btn.btn-mini {
   color: #333333;
   text-decoration: none;
 }
+
