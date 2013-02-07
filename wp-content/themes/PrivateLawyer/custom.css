@@ -309,7 +309,7 @@ table.shop_table
 }
 
 #info-btn {
-  background: url(1-default/btn_read.png) repeat-x left top;
+  background: url(skins/1-default/btn_read.png) repeat-x left top;
   color: #fff;
   text-shadow: 1px 1px 1px #82440b;
   height: 26px;
