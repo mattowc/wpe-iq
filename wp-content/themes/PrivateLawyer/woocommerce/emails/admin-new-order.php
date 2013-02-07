@@ -13,8 +13,6 @@ if (!defined('ABSPATH')) exit; ?>
 
 <p><?php echo __('You have received an order from', 'woocommerce') . ' ' . $order->billing_first_name . ' ' . $order->billing_last_name . __(". Their order is as follows:", 'woocommerce'); ?></p>
 
-<?php do_action('woocommerce_email_before_order_table', $order, true); ?>
-
 <h2><?php echo __('Order:', 'woocommerce') . ' ' . $order->get_order_number(); ?> (<?php printf( '<time datetime="%s">%s</time>', date_i18n( 'c', strtotime( $order->order_date ) ), date_i18n( __('jS F Y', 'woocommerce'), strtotime( $order->order_date ) ) ); ?>)</h2>
 
 <table cellspacing="0" cellpadding="6" style="width: 100%; border: 1px solid #eee;" border="1" bordercolor="#eee">
@@ -80,20 +78,20 @@ if (!defined('ABSPATH')) exit; ?>
 	</tfoot>
 </table>
 
-<?php do_action('woocommerce_email_after_order_table', $order, true); ?>
-
 <h2><?php _e('Customer details', 'woocommerce'); ?></h2>
 
+<p>
 <?php if ($order->billing_email) : ?>
-	<p><strong><?php _e('Email:', 'woocommerce'); ?></strong> <?php echo $order->billing_email; ?></p>
+	<strong><?php _e('Email:', 'woocommerce'); ?></strong> <?php echo $order->billing_email; ?>,
 <?php endif; ?>
 <?php if ($order->billing_phone) : ?>
-	<p><strong><?php _e('Tel:', 'woocommerce'); ?></strong> <?php echo $order->billing_phone; ?></p>
+	 <strong><?php _e('Tel:', 'woocommerce'); ?></strong> <?php echo $order->billing_phone; ?>
 <?php endif; ?>
 <?php $height = get_post_meta( $order->id, '_billing_height', true ); ?>
 <?php if($height) : ?>
-	<p><strong><?php _e('Height:', 'woocommerce'); ?></strong> <?php echo $height; ?></p>
+	 <strong><?php _e('Height:', 'woocommerce'); ?></strong> <?php echo $height; ?>.
 <?php endif; ?>
+</p>
 
 <?php woocommerce_get_template('emails/email-addresses.php', array( 'order' => $order )); ?>
 

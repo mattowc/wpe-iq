@@ -304,6 +304,37 @@ and (max-device-width : 480px) {
     font-size: 32px !important;
     font-weight: bolder;
   }
+
+  .consultation-form p {
+    width: 385px;
+  }
+
+  .mobile-fix-p {
+    width: 385px;
+    font-size: 16px;
+  }
+
+  input[type=checkbox]
+  {
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+
+    padding: 10px;
+  }
+
+  .checkbox-fix {
+    display: inline;
+    font-size: 110%;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  label.checkbox {
+    margin-right: 20px;
+  }
 }
 
 /*
@@ -1553,3 +1584,4 @@ input[type="submit"].btn.btn-mini {
   color: #333333;
   text-decoration: none;
 }
+>>>>>>> 1c579de02159d8a8b45342e161a43a73f9255654
