@@ -5,7 +5,7 @@
 <div id="info-header">
     <div id="info-container">
         <div id="info-wrap">
-            Call toll free (800) 893-9315    or    <a href="#" id="info-btn">Get Started</a>
+            Call toll free (800) 893-9315 <span>or</span> <a href="#" id="info-btn">Get Started</a>
         </div> <!-- End #info-wrap -->
     </div> <!-- End #info-container -->
 </div> <!-- End #info-header -->

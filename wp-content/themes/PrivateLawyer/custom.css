@@ -319,6 +319,14 @@ table.shop_table
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   -khtml-border-radius: 5px;
+  display: inline-block;
+  position: relative;
+  top: -2px;
+}
+
+#info-wrap span {
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 /***************************************************************************
