@@ -308,6 +308,19 @@ table.shop_table
   line-height: 30px
 }
 
+#info-btn {
+  background: url(1-default/btn_read.png) repeat-x left top;
+  color: #fff;
+  text-shadow: 1px 1px 1px #82440b;
+  height: 26px;
+  font-size: 12px;
+  line-height: 25px;
+  padding: 0px 20px 0px 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+}
+
 /***************************************************************************
  * Mobile Fixes
  **************************************************************************/
