@@ -284,6 +284,30 @@ table.shop_table
 }
 
 /***************************************************************************
+ * Header:  Info Bar;
+ **************************************************************************/
+
+#info-header {
+  display: block; 
+  width: 100%; 
+  height:32px;
+}
+
+#info-container {
+  display: inline-block; 
+  width: 978px; 
+  margin: 0 auto;
+}
+
+#info-wrap {
+  float: right; 
+  margin-right: 45px; 
+  color: #6b6b6b; 
+  font-size: 18px; 
+  line-height: 30px
+}
+
+/***************************************************************************
  * Mobile Fixes
  **************************************************************************/
 
