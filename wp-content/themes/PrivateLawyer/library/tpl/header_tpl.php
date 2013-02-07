@@ -5,7 +5,7 @@
 <div id="info-header">
     <div id="info-container">
         <div id="info-wrap">
-            Call toll free or something or <a href="#" class="btn btn-primary btn-small btn-warning">Get Started</a>
+            Call toll free or something or <a href="#" class="btn btn-primary btn-small">Get Started</a>
         </div> <!-- End #info-wrap -->
     </div> <!-- End #info-container -->
 </div> <!-- End #info-header -->
