@@ -28,6 +28,8 @@ function jm_update_sub_filter()
 	{
 		add_filter('woocommerce_order_amount_total', 'jm_update_sub_order_total', 11, 1);
 	}
+
+	add_filter('woocommerce_order_amount_total', 'jm_update_sub_order_total', 12, 1);
 }
 
 
