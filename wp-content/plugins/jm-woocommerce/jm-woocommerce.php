@@ -38,7 +38,7 @@ function jm_update_sub_order_total( $price )
 {
 	global $woocommerce;
 
-	return $woocommerce->cart->shipping_total + $price;
+	return 200 + $price;
 } 
 
 function jm_fix_sub_meta()
