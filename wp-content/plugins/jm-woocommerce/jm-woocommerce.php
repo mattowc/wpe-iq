@@ -29,7 +29,7 @@ function jm_update_sub_filter()
 		add_filter('woocommerce_order_amount_total', 'jm_update_sub_order_total', 11, 1);
 	}
 
-	add_filter('woocommerce_order_amount_total', 'jm_update_sub_order_total', 12, 1);
+	add_filter('woocommerce_order_amount_total', 'jm_update_sub_order_total_two', 12, 1);
 }
 
 
@@ -39,6 +39,13 @@ function jm_update_sub_filter()
  * price if this is subscription
  */
 function jm_update_sub_order_total( $price )
+{
+	global $woocommerce;
+
+	return 200 + $price;
+} 
+
+function jm_update_sub_order_total_two( $price )
 {
 	global $woocommerce;
 
