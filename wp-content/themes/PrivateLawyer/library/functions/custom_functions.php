@@ -231,7 +231,7 @@ class templ_anything_slider extends WP_Widget {
      	<div class="video_space"><?php echo $video; ?> </div>
 	 <?php } else {
 	if(get_the_post_thumbnail( $post	->ID, array())){?>
-	<a class="post_img" href="/contact-us/schedule-a-free-consultation/">
+	<a class="post_img" href="/contact-us/request-a-free-consultation/">
 	<?php echo get_the_post_thumbnail( $post->ID, array(415,236),array('class'	=> "",));?></a><?php
 	}else if($post_images[0]){ global $thumb_url;
 	?>
@@ -240,12 +240,12 @@ class templ_anything_slider extends WP_Widget {
 	} else {?> 
  	<?php } } ?>   
     
-				<h2 class="title"><a class="widget-title" href="/contact-us/schedule-a-free-consultation/"><?php the_title(); ?></a></h2>
+				<h2 class="title"><a class="widget-title" href="/contact-us/request-a-free-consultation/"><?php the_title(); ?></a></h2>
                   <?php the_content(); ?> 
                 
                
                 
-                <?php if($readmore){?>  <p class="clearfix"><a href="/contact-us/schedule-a-free-consultation/" class="more"><?php echo $readmore; ?></a></p> <?php }?>
+                <?php if($readmore){?>  <p class="clearfix"><a href="/contact-us/request-a-free-consultation/" class="more"><?php echo $readmore; ?></a></p> <?php }?>
                 
   		<?php }?>
  			</div>
