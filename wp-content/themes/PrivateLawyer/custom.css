@@ -309,9 +309,9 @@ table.shop_table
 }
 
 #info-btn {
-  background: url(skins/1-default/btn_read.png) repeat-x left top;
+  background: url(/wp-content/uploads/2013/02/btn-gradient.png) repeat-x left top;
   color: #fff;
-  text-shadow: 1px 1px 1px #82440b;
+  text-shadow: 1px 1px 1px #ff6900;
   height: 26px;
   font-size: 12px;
   line-height: 25px;
@@ -322,6 +322,10 @@ table.shop_table
   display: inline-block;
   position: relative;
   top: -2px;
+}
+
+#info-btn:hover {
+  background: #ff6900;
 }
 
 #info-wrap span {
