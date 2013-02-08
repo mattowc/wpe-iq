@@ -24,13 +24,14 @@ add_action('plugins_loaded', 'jm_fix_sub_meta');
  */
 function jm_update_sub_filter()
 {
-	if( WC_Subscriptions_Cart::cart_contains_subscription() )
-	{
-		
-	}
+
 }
 
-add_filter('woocommerce_order_amount_total', 'jm_update_sub_order_total', 11, 1);
+if( WC_Subscriptions_Cart::cart_contains_subscription() )
+{
+	add_filter('woocommerce_order_amount_total', 'jm_update_sub_order_total', 11, 1);
+}
+
 
 /**
  * This simply hooks in and changes the total to include the shipping
