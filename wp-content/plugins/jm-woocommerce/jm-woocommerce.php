@@ -14,7 +14,7 @@ Author URI:  http://onwebcentric.com
  * and recurring payments without subscription.  This would probably
  * break on other pricing. 
  */
-add_action('plugins_loaded', 'jm_fix_sub_meta');
+add_action('init', 'jm_fix_sub_meta');
 add_action('init', 'jm_update_sub_filter');
 
 /**
@@ -28,8 +28,6 @@ function jm_update_sub_filter()
 	{
 		add_filter('woocommerce_order_amount_total', 'jm_update_sub_order_total', 11, 1);
 	}
-
-	add_filter('woocommerce_order_amount_total', 'jm_update_sub_order_total_two', 12, 1);
 }
 
 
@@ -42,14 +40,7 @@ function jm_update_sub_order_total( $price )
 {
 	global $woocommerce;
 
-	return 200 + $price;
-} 
-
-function jm_update_sub_order_total_two( $price )
-{
-	global $woocommerce;
-
-	return 200 + $price;
+	return $woocommerce->cart->shipping_total + $price;
 } 
 
 function jm_fix_sub_meta()
