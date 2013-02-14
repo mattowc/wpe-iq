@@ -46,6 +46,9 @@ $(document).ready(function() {
 		_gaq.push(['_trackEvent', 'Hero Form', 'Step Completed', 'Step #' + jm.step + ' Completed']);
 		console.log('Step #' + jm.step + ' Completed');
 
+		// Besides the event we want to also track goal completion...
+		_gaq.push(['_trackPageview', '/step' + jm.step + '.html']); 
+
 		// Next let's move to the next step
 		jm.step++;
 		$('#' + jm.step).show();
@@ -101,7 +104,7 @@ $(document).ready(function() {
 		console.log(jm.current);
 
 		// Push into google analytics
-		_gaq.push(['_trackPageview', jm.current + '.html']); // For analytics tracking
+		_gaq.push(['_trackPageview', jm.current + '.html']); 
 	});
 });
 
