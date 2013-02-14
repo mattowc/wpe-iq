@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing Page Prototype</title>
+	<meta viewport="1" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/css/bootstrap-responsive.css" />
+	<link rel="stylesheet" href="assets/css/other.css" />
+</head>
+<body>
+	<!-- By Jonathon McDonald -->
+	<header class="jumbotron subhead">
+		<div class="container">
+			<div class="row">
+				<div class="span6 head-logo">
+					<img src="http://iq-express.com/wp-content/uploads/2011/05/iq-express-logo-remixed-4.gif" />
+				</div>
+				<div class="span6 phone">
+					<p>
+						Have questions about learning disabilities? <br />
+						Call (801) 200-3808<i class="icon-phone"></i> to talk to an expert
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="navbar">
+			  <div class="navbar-inner">
+			    <a class="brand" href="#">Title</a>
+			    <ul class="nav">
+			      <li><a href="#" id="home" class="nav-links">Home</a></li>
+			      <li><a href="#" id="second" class="nav-links">Link</a></li>
+			      <li><a href="#" id="third" class="nav-links">Link</a></li>
+			    </ul> <!-- End ul.nav -->
+			  </div> <!-- End .navbar-inner -->
+			</div> <!-- End .navbar -->
+		</div> <!-- End .container -->
+	</header> <!-- End header -->
+
+	<article>
+		<div class="container">
+			<div class="row">
+
+				<div class="span7">
+					<div id="home" class="content">
+						<h1>Intro</h1>
+						<img src="http://fakeimg.pl/950x300/?text=Hello%20World" />
+						<p>
+							The static page (i.e. the form and pages) are powered by jQuery and caffeine.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<ul>
+							<li>This is a list</li>
+							<li>Another bullet point</li>
+							<li>Run TOP
+								<ul>
+									<li>I'm a sub list</li>
+									<li>Great!</li>
+								</ul>
+							</li>
+							<li>Etc...</li>
+						</ul>
+						<p>
+							Each paragraph should start with an important sentence.  This is because users are
+							more likely to scan the page.  Enjoy!
+						</p>
+					</div>
+					<div id="second" class="content" style="display: none;">
+						<h3>Bootstrap Javascript Examples</h3>
+
+						<p>
+							Below are some examples of some Bootstrap jQuery library's in action.  
+							Since this is all done from a single page, too much content or javascript 
+							will be hard on mobile users.  Keep this in mind. 
+						</p>
+
+						<!-- TABS --> 
+						<h4>Tabs</h4>
+						<ul class="nav nav-tabs">
+						  <li class="active"><a href="#first-tab" data-toggle="tab">First</a></li>
+						  <li><a href="#second-tab" data-toggle="tab">Second</a></li>
+						  <li><a href="#third-tab" data-toggle="tab">Third</a></li>
+						  <li><a href="#fourth-tab" data-toggle="tab">Fourth</a></li>
+						</ul>
+						 
+						<div class="tab-content">
+						  <div class="tab-pane active" id="first-tab">
+						  	This is an example of the first tab.  
+						  </div>
+						  <div class="tab-pane" id="second-tab">
+							This is an example of the second tab. 
+						  </div>
+						  <div class="tab-pane" id="third-tab">
+						  	This is an example of the third tab. 
+						  </div>
+						  <div class="tab-pane" id="fourth-tab">
+						  	This is an example of the fourth tab. 
+						  </div>
+						</div>
+
+						<hr />
+
+						<!-- ACCORDION/COLLAPSE -->
+						<h4>Accordion</h4>
+						<div class="accordion" id="example-accord">
+							<div class="accordion-group">
+								<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#example-accord" href="#first-accord">
+										Collapsible Group Item One
+									</a>
+								</div>
+								<div id="first-accord" class="accordion-body collapse in">
+									<div class="accordion-inner">
+										<p>
+											This is useful for engaging the user, but be sure that it is 100% obvious
+											that these accordions can expand and collapse.  While this is common knowledge
+											to us, different demographics aren't as aware.  
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-group">
+								<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#example-accord" href="#second-accord">
+										Collapsible Group Item Two
+									</a>
+								</div>
+								<div id="second-accord" class="accordion-body collapse">
+									<div class="accordion-inner">
+										<p>
+											More content...
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-group">
+								<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#example-accord" href="#third-accord">
+										Collapsible Group Item Three
+									</a>
+								</div>
+								<div id="third-accord" class="accordion-body collapse">
+									<div class="accordion-inner">
+										<p>
+											This could be even more info.  Oh yeah!  
+										</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					<div id="third" class="content" style="display: none;">
+						<h3>Third Page</h3>
+					</div>
+				</div> <!-- End .span8 -->
+
+				<div class="span5">
+					<div class="hero-form">
+						<form>
+							<legend>Free Consultation</legend>
+
+							<div class="progress progress-striped progress-warning active">
+								<div class="bar"></div>
+							</div>
+						
+							<div class="control-group" id="0">
+							    <label class="control-label" for="input-child">Is This for an Adult or Child?</label>
+							    <div class="controls">
+							      <label class="radio">
+							        <input type="radio" name="adult-or-child" id="input-child" value="option1" checked>
+							        For a child
+							      </label>
+							      <label class="radio">
+							        <input type="radio" name="adult-or-child" id="input-child2" value="option2">
+							        For an adult
+							      </label>
+							    </div>
+							</div>
+
+							<div class="control-group" id="1" style="display: none;">
+							    <label class="control-label" for="input-name">Personal Info</label>
+							    <div class="controls">
+							    	<input type="text" name="their-name" id="input-name" placeholder="Johnny Appleseed..." />
+							    	<input type="text" name="their-email" id="input-email" placeholder="steve@apple.com..." />
+							    	<input type="text" name="their-phone" id="input-phone" placeholder="(555)545-5555..." />
+							    </div>
+							</div>
+
+							<div class="control-group" id="2" style="display: none;">
+						    <label class="control-label" for="input-drop">Dropdown</label>
+							    <div class="controls">
+							    	<select name="their-drop" id="input-drop">
+							    		<option selected>I'm a drop down</option>
+							    		<option>I'm a option</option>
+							    		<option>If we're being</option>
+							    		<option>Specific</option>
+							    	</select>
+							    </div>
+							</div>
+
+							<div class="control-group" id="3" style="display: none;">
+							    <label class="control-label" for="input-bio">Quick Bio</label>
+							    <div class="controls">
+							    	<textarea name="their-bio" id="input-bio" placeholder="Bio..."></textarea>
+							    </div>
+							</div>
+
+							<div class="form-actions">
+							  <button type="submit" class="btn" id="back">Go Back</button>
+							  <button type="submit" class="btn btn-warning" id="continue">Continue</button>
+							  <input type="hidden" value="1" id="step"></input>
+							</div>
+							<h6>As seen at...</h6>
+							<div class="logos">
+								<img src="assets/img/pbs-logo.png" /><img src="assets/img/oxford-logo.gif" />
+							</div>
+
+							<h6>Our students love IQ Express</h6>
+							<blockquote>
+								<img src="http://fakeimg.pl/30x30/?text=Kid" class="img-polaroid pull-left">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. 
+								<small>Some Kid</small>
+							</blockquote>
+						</form>
+					</div>
+				</div> <!-- End .span4 -->
+
+			</div> <!-- End .row -->
+		</div> <!-- End .container -->
+	</article> <!-- End article -->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="span12 copyright">
+					Copyright &copy; 2013 - IQ Express by Learning Technics. 126 W. 12300 South, Suite A, Draper, Utah 84020<br />
+					Website design by <a class="onewebcentric" href="#"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+<!-- Scripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/control-page.js"></script>
+</body>
+</html>
