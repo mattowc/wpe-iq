@@ -26,9 +26,9 @@ $(document).ready(function() {
 	
 	// Handle continue functionality
 	// This must check the form first
-	$('#continue').click(function() {
+	$('#continue').click(function(ev) {
 		// Prevent default behavior
-		event.preventDefault();
+		ev.preventDefault();
 
 		if($('#' + jm.step + ' input').val() == "")
 		{
@@ -59,9 +59,9 @@ $(document).ready(function() {
 	});
 
 	// This goes back, but doesn't check the form
-	$('#back').click(function() {
+	$('#back').click(function(ev) {
 		// Prevent default
-		event.preventDefault();
+		ev.preventDefault();
 
 		// Hide the current step, and show the previous
 		$('#' + jm.step).hide();
