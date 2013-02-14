@@ -41,6 +41,12 @@ $(document).ready(function() {
 
 		// Hide the current step, and show the next
 		$('#' + jm.step).hide();
+
+		// Let google analytics know that this step was completed
+		_gaq.push(['_trackEvent', 'Hero Form', 'Step Completed', 'Step #' + jm.step + ' Completed']);
+		console.log('Step #' + jm.step + ' Completed');
+
+		// Next let's move to the next step
 		jm.step++;
 		$('#' + jm.step).show();
 
