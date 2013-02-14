@@ -71,24 +71,32 @@ $(document).ready(function() {
  * This simply hides and shows content
  */
 $(document).ready(function() {
+	// Hides all content
 	$('.content:not(#' + jm.current + ')').hide();
+
+	// Ensure the current element is being shown
 	$('#' + jm.current).show();
 	$('#' + jm.current).parents().addClass('active');
 
+	// Now if a link is clicked we need to handle it
 	$('.nav-links').click(function() {
+		// Hide the current element
 		$('#' + jm.current).parents().removeClass('active');
 		$('#' + jm.current + '.content').hide();
+
+		// Set jm.current (tracking the current page) to the new page
 		jm.current = this.id;
+
+		// Appropriately show the new page
 		$('#' + jm.current).parents().addClass('active');
 		$('#' + jm.current + '.content').show();
+
+		// For debugging purposes
+		console.log(jm.current);
+
+		// Push into google analytics
+		_gaq.push(['_trackPageview', jm.current + '.html']); // For analytics tracking
 	});
 });
-
-/**
- * For tabs to be easily used.  This is taken
- * direct from the Bootstrap page
- */
-
-
 
 
