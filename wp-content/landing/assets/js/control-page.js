@@ -30,14 +30,14 @@ $(document).ready(function() {
 		// Prevent default behavior
 		ev.preventDefault();
 
-		if($('#' + jm.step + ' input').val() == "")
-		{
-			$('#' + jm.step).addClass('error');
-			$('#' + jm.step + ' input').click(function() {
-				$('#' + jm.step).removeClass('error');
-			});
-			return;
-		}
+		// if($('#' + jm.step + ' input').val() == "")
+		// {
+		// 	$('#' + jm.step).addClass('error');
+		// 	$('#' + jm.step + ' input').click(function() {
+		// 		$('#' + jm.step).removeClass('error');
+		// 	});
+		// 	return;
+		// }
 
 		// Hide the current step, and show the next
 		$('#' + jm.step).hide();
