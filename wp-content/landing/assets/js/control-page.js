@@ -31,14 +31,14 @@ $(document).ready(function() {
 		ev.preventDefault();
 
 		// Select the current form inputs
-		var curr = $('#' + jm.step + ' input').val();
+		var curr = $('#' + jm.step + ' select').val();
 
 		console.log(curr);
 
 		// Prevent errors from progressing...
 		if((jm.step == 1 && curr == "Choose Student's Age Range") || (jm.step== 2 && curr == "Choose Learning Disability")) {
 			$('#' + jm.step).addClass('error');
-			$('#' + jm.step + ' input').click(function() {
+			$('#' + jm.step + ' select').click(function() {
 				$('#' + jm.step).removeClass('error');
 			});
 			return;
