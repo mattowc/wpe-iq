@@ -30,9 +30,11 @@ $(document).ready(function() {
 		// Prevent default behavior
 		ev.preventDefault();
 
-		// This just ensures no field is left empty
-		if($('#' + jm.step + ' input').val() == "")
-		{
+		// Select the current form inputs
+		var curr = $('#' + jm.step + ' input');
+
+		// Prevent errors from progressing...
+		if((jm.step == 1 && curr.val() == "Choose Student's Age Range") || (jm.step== 2 && curr.val() == "Choose Learning Disability")) {
 			$('#' + jm.step).addClass('error');
 			$('#' + jm.step + ' input').click(function() {
 				$('#' + jm.step).removeClass('error');
@@ -59,8 +61,7 @@ $(document).ready(function() {
 
 		// If this is the last step, we actually want to remove the click handler
 		// and rename this to submit
-		if(jm.step == 3)
-		{
+		if(jm.step == 3) {
 			$('form legend').html("The Last Step!");
 			$('#continue').html("Submit");
 		}
@@ -74,6 +75,12 @@ $(document).ready(function() {
 		// Don't allow the user to go behind step zero
 		if(jm.step == 1)
 			return;
+
+		// If we were at step three, we need to do some clean up
+		if(jm.step == 3) {
+			$('form legend').html("Get your personalized consultation in 3 easy steps");
+			$('#continue').html("Next");
+		}
 
 		// Hide the current step, and show the previous
 		$('#' + jm.step).hide();
