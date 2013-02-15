@@ -6,6 +6,11 @@ body {
 	background: #fff;
 }
 
+.logos {
+	display: block;
+	margin: 0 auto;
+}
+
 /*******************************************************
 * Footer
 *******************************************************/
@@ -82,7 +87,7 @@ input[type="number"], input[type="email"],
 input[type="url"], input[type="search"], 
 input[type="tel"], input[type="color"], 
 .uneditable-input {
-	border: 2px solid #ff6900;
+	border: 1px solid rgb(0, 163, 255);
 }
 
 /*******************************************************

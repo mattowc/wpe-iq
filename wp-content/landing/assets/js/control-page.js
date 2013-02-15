@@ -5,12 +5,12 @@
 var jm = {};
 
 jm.i = 0;
-jm.step = 0;
-jm.percentage = 1;
+jm.step = 1;
+jm.percentage = 33;
 jm.current = "home";
 
 /**
- * This actually sets up the page
+ * This actually sets up the progress bar
  */
 $(document).ready(function() {
 	$('.bar').width(jm.percentage + '%');
@@ -45,7 +45,6 @@ $(document).ready(function() {
 
 		// Let google analytics know that this step was completed
 		_gaq.push(['_trackEvent', 'Hero Form', 'Step Completed', 'Step #' + jm.step + ' Completed']);
-		// console.log('Step #' + jm.step + ' Completed');
 
 		// Besides the event we want to also track goal completion...
 		_gaq.push(['_trackPageview', '/step' + jm.step + '.html']); 
@@ -55,7 +54,7 @@ $(document).ready(function() {
 		$('#' + jm.step).show();
 
 		// Next let's increment the progress
-		jm.percentage = 25 * jm.step;
+		jm.percentage = 33 * jm.step;
 		$('.bar').width(jm.percentage + '%');
 	});
 
@@ -65,7 +64,7 @@ $(document).ready(function() {
 		ev.preventDefault();
 
 		// Don't allow the user to go behind step zero
-		if(jm.step == 0)
+		if(jm.step == 1)
 			return;
 
 		// Hide the current step, and show the previous
@@ -74,8 +73,8 @@ $(document).ready(function() {
 		$('#' + jm.step).show();
 
 		// Next let's decrement the progress
-		jm.percentage = 25 * jm.step;
-		jm.i = 25 * jm.step;
+		jm.percentage = 33 * jm.step;
+		jm.i = 33 * jm.step;
 		$('.bar').width(jm.percentage + '%');
 	});
 });
