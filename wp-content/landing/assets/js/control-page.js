@@ -62,7 +62,7 @@ $(document).ready(function() {
 		if(jm.step == 3)
 		{
 			$('form legend').html("The Last Step!");
-			$('#continue').val("Submit");
+			$('#continue').html("Submit");
 		}
 	});
 
