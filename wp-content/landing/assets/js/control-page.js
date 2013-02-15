@@ -44,6 +44,18 @@ $(document).ready(function() {
 			return;
 		}
 
+		// If it's the last step, we should do some pretty interesting error checking...
+		$('#' + jm.step + ' input').each(function() {
+			if($(this).val() == "")
+			{
+				$('#' + jm.step).addClass('error');
+				$('#' + jm.step + ' select').click(function() {
+					$('#' + jm.step).removeClass('error');
+				});
+				return;
+			}
+		});
+
 		// Hide the current step, and show the next
 		$('#' + jm.step).hide();
 
