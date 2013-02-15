@@ -44,6 +44,8 @@ $(document).ready(function() {
 			return;
 		}
 
+		var errorInInput = false;
+
 		// If it's the last step, we should do some pretty interesting error checking...
 		$('#' + jm.step + ' input').each(function() {
 			if($(this).val() == "")
@@ -52,9 +54,14 @@ $(document).ready(function() {
 				$('#' + jm.step + ' select').click(function() {
 					$('#' + jm.step).removeClass('error');
 				});
-				return;
+
+				errorInInput = true;
+				return; // This just returns from the current function :\...
 			}
 		});
+
+		if(errorInInput)
+			return;
 
 		// Hide the current step, and show the next
 		$('#' + jm.step).hide();
