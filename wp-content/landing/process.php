@@ -10,7 +10,7 @@ $redirect_page = 'http://iq-express.com/'; // Please enter an exact URL here
 $send_to       = 'jon@onewebcentric.com';  // Any valid email will work fine
 $send_to_name  = 'Jonathon McDonald';      // Just a personal touch eh?
 
-if( isset( $_POST['go-submit'] ) ) 
+if( isset( $_POST ) ) 
 {
 	$age    = filter_var($_POST['adult-or-child'], FILTER_SANITIZE_EMAIL);
 	$ld     = filter_var($_POST['their-drop'], FILTER_SANITIZE_EMAIL);
@@ -19,20 +19,22 @@ if( isset( $_POST['go-submit'] ) )
 	$phone  = filter_var($_POST['their-phone'], FILTER_SANITIZE_EMAIL);
 
 	$email_body  = '<h1>IQ Express Landing Page Form Fill</h1>';
-	$email_body .= 'Age:  ' . $age; ' <br />';
+	$email_body .= 'Age:  ' . $age . ' <br />';
 	$email_body .= 'Learning Disability:  ' . $ld . ' <br />';
 	$email_body .= 'Their Name:  ' . $name . ' <br />';
 	$email_body .= 'Their Email:  ' . $email . '<br />';
 	$email_body .= 'Their Phone:  ' . $phone . '<br />';
 
-	$email_headers = 'From: ' . $send_to . '' . "\r\n" .
-    'Reply-To: ' . $send_to . '' . "\r\n";
+	// To send HTML mail, the Content-type header must be set
+	$email_headers  = 'MIME-Version: 1.0' . "\r\n";
+	$email_headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
-    if( mail( $send_to, 'IQ Express Landing Page Fill', $email_body, $email_headers ) )
-    	echo 'Successfuly sent!';
-    else
-    	echo 'Error!';
-} else {
-	echo 'No form submitted!';
-	print_r( $_POST );
-}
+	// Additional headers
+	$email_headers .= 'To: ' . $send_to_name . ' <' . $send_to . '>' . "\r\n";
+	$email_headers .= 'From: IQ Express <support@iq-express.com>' . "\r\n";
+
+    mail( $send_to, 'IQ Express Landing Page Fill', $email_body, $email_headers );
+
+} 
+
+header("Location: " . $redirect_page);
