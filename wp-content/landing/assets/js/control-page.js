@@ -51,7 +51,7 @@ $(document).ready(function() {
 			if($(this).val() == "")
 			{
 				$('#' + jm.step).addClass('error');
-				$('#' + jm.step + ' select').click(function() {
+				$('#' + jm.step + ' input').click(function() {
 					$('#' + jm.step).removeClass('error');
 				});
 
