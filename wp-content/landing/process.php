@@ -32,4 +32,7 @@ if( isset( $_POST['go-submit'] ) )
     	echo 'Successfuly sent!';
     else
     	echo 'Error!';
+} else {
+	echo 'No form submitted!';
+	print_r( $_POST );
 }
