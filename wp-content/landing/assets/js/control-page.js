@@ -63,6 +63,9 @@ $(document).ready(function() {
 		// Prevent default
 		ev.preventDefault();
 
+		if(jm.step == 0)
+			return;
+
 		// Hide the current step, and show the previous
 		$('#' + jm.step).hide();
 		jm.step--;
