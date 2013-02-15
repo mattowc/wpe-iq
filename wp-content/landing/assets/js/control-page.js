@@ -54,8 +54,16 @@ $(document).ready(function() {
 		$('#' + jm.step).show();
 
 		// Next let's increment the progress
-		jm.percentage = 33 * jm.step;
+		jm.percentage = (jm.step == 3) ? 100 : 33 * jm.step;
 		$('.bar').width(jm.percentage + '%');
+
+		// If this is the last step, we actually want to remove the click handler
+		// and rename this to submit
+		if(jm.step == 3)
+		{
+			$('form legend').html("The Last Step!");
+			$('#continue').val("Submit");
+		}
 	});
 
 	// This goes back, but doesn't check the form
