@@ -44,7 +44,7 @@ $(document).ready(function() {
 
 		// Let google analytics know that this step was completed
 		_gaq.push(['_trackEvent', 'Hero Form', 'Step Completed', 'Step #' + jm.step + ' Completed']);
-		console.log('Step #' + jm.step + ' Completed');
+		// console.log('Step #' + jm.step + ' Completed');
 
 		// Besides the event we want to also track goal completion...
 		_gaq.push(['_trackPageview', '/step' + jm.step + '.html']); 
@@ -107,7 +107,7 @@ $(document).ready(function() {
 		$('#' + jm.current + '.content').show();
 
 		// For debugging purposes
-		console.log(jm.current);
+		// console.log(jm.current);
 
 		// Push into google analytics
 		_gaq.push(['_trackPageview', jm.current + '.html']); 
