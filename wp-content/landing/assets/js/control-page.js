@@ -86,6 +86,10 @@ $(document).ready(function() {
 			$('form legend').html("The Last Step!");
 			$('#continue').html("Submit");
 		}
+
+		if(jm.step == 4) {
+			return true;
+		}
 	});
 
 	// This goes back, but doesn't check the form
