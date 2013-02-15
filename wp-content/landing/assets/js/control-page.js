@@ -88,7 +88,7 @@ $(document).ready(function() {
 		}
 
 		if(jm.step == 4) {
-			return true;
+			$('form').submit();
 		}
 	});
 
