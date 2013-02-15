@@ -43,6 +43,8 @@
 		<div class="container">
 			<div class="row">
 
+				<!-- Content -->
+
 				<div class="span7">
 					<div id="home" class="content">
 						<h1>Intro</h1>
@@ -165,6 +167,7 @@
 					</div>
 				</div> <!-- End .span8 -->
 
+				<!-- The Form --> 
 				<div class="span5">
 					<div class="hero-form">
 						<form>
@@ -177,35 +180,40 @@
 							<div class="control-group" id="0">
 							    <label class="control-label" for="input-child">Is This for an Adult or Child?</label>
 							    <div class="controls">
-							      <label class="radio">
-							        <input type="radio" name="adult-or-child" id="input-child" value="option1" checked>
-							        For a child
-							      </label>
-							      <label class="radio">
-							        <input type="radio" name="adult-or-child" id="input-child2" value="option2">
-							        For an adult
-							      </label>
+							      <select name="adult-or-child" id="input-child">
+							      	<option>Child (Ages 4-7)</option>
+							      	<option>Teen (Ages 8-17)</option>
+							      	<option>Adult (Ages 18+)</option>
+							      </select>
 							    </div>
 							</div>
 
 							<div class="control-group" id="1" style="display: none;">
-							    <label class="control-label" for="input-name">Personal Info</label>
-							    <div class="controls">
-							    	<input type="text" name="their-name" id="input-name" placeholder="Johnny Appleseed..." />
-							    	<input type="text" name="their-email" id="input-email" placeholder="steve@apple.com..." />
-							    	<input type="text" name="their-phone" id="input-phone" placeholder="(555)545-5555..." />
-							    </div>
+							    <label class="control-label" for="input-drop">What Disability do They Struggle With?</label>
+								<div class="controls">
+								    <select name="their-drop" id="input-drop">
+								    	<option selected>Dyslexia</option>
+								    	<option>ADHD</option>
+								    	<option>Dysgraphia</option>
+								    	<option>Dyspraxia</option>
+								    </select>
+								</div>
 							</div>
 
 							<div class="control-group" id="2" style="display: none;">
-						    <label class="control-label" for="input-drop">Dropdown</label>
+							    <label class="control-label" for="input-name">Your Name</label>
 							    <div class="controls">
-							    	<select name="their-drop" id="input-drop">
-							    		<option selected>I'm a drop down</option>
-							    		<option>I'm a option</option>
-							    		<option>If we're being</option>
-							    		<option>Specific</option>
-							    	</select>
+							    	<input type="text" name="their-name" id="input-name" placeholder="Johnny Appleseed..." />
+							    </div>
+
+							    <label class="control-label" for="input-email">Your Email</label>
+							    <div class="controls">
+							    	<input type="text" name="their-email" id="input-email" placeholder="steve@apple.com..." />
+							    </div>
+
+							    <label class="control-label" for="input-phone">Your Phone</label>
+							    <div class="controls">
+							    	<input type="text" name="their-phone" id="input-phone" placeholder="(555)545-5555..." />
 							    </div>
 							</div>
 

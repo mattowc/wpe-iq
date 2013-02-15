@@ -30,14 +30,15 @@ $(document).ready(function() {
 		// Prevent default behavior
 		ev.preventDefault();
 
-		// if($('#' + jm.step + ' input').val() == "")
-		// {
-		// 	$('#' + jm.step).addClass('error');
-		// 	$('#' + jm.step + ' input').click(function() {
-		// 		$('#' + jm.step).removeClass('error');
-		// 	});
-		// 	return;
-		// }
+		// This just ensures no field is left empty
+		if($('#' + jm.step + ' input').val() == "")
+		{
+			$('#' + jm.step).addClass('error');
+			$('#' + jm.step + ' input').click(function() {
+				$('#' + jm.step).removeClass('error');
+			});
+			return;
+		}
 
 		// Hide the current step, and show the next
 		$('#' + jm.step).hide();
@@ -63,6 +64,7 @@ $(document).ready(function() {
 		// Prevent default
 		ev.preventDefault();
 
+		// Don't allow the user to go behind step zero
 		if(jm.step == 0)
 			return;
 
@@ -105,9 +107,6 @@ $(document).ready(function() {
 		// Appropriately show the new page
 		$('#' + jm.current).parents().addClass('active');
 		$('#' + jm.current + '.content').show();
-
-		// For debugging purposes
-		// console.log(jm.current);
 
 		// Push into google analytics
 		_gaq.push(['_trackPageview', jm.current + '.html']); 
