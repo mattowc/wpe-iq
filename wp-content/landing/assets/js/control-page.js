@@ -33,7 +33,7 @@ $(document).ready(function() {
 		// Select the current form inputs
 		var curr = $('#' + jm.step + ' select').val();
 
-		console.log(curr);
+		// console.log(curr);
 
 		// Prevent errors from progressing...
 		if((jm.step == 1 && curr == "Choose Student's Age Range") || (jm.step== 2 && curr == "Choose Learning Disability")) {
@@ -88,7 +88,7 @@ $(document).ready(function() {
 		}
 
 		if(jm.step == 4) {
-			$('form').submit();
+			$('#core-form').submit();
 		}
 	});
 
