@@ -88,7 +88,10 @@ $(document).ready(function() {
 	$('#' + jm.current).parents().addClass('active');
 
 	// Now if a link is clicked we need to handle it
-	$('.nav-links').click(function() {
+	$('.nav-links').click(function(ev) {
+		// Prevent the default
+		ev.preventDefault();
+		
 		// Hide the current element
 		$('#' + jm.current).parents().removeClass('active');
 		$('#' + jm.current + '.content').hide();
