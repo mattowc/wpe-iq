@@ -19,22 +19,24 @@ $(document).ready(function() {
 
 		// First check the name
 		if ($('#input-name').val().length < 2) {
+			$('#name').addClass('error');
 			isError = true;
 		}
 
 		// Next check the email
 		if (!jm.validateEmail($('#input-email').val())) {
+			$('#email').addClass('error');
 			isError = true;
 		}
 
 		// Lastly check the phone
 		if (!jm.validatePhone($('#input-phone').val())) {
+			$('#phone').addClass('error');
 			isError = true;
 		}
 
 		// If there are any errors, show them and return
 		if (isError) {
-			$('.control-group').addClass('error');
 			return false;
 		}
 	});
