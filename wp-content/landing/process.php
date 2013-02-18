@@ -6,8 +6,8 @@
  * @author Jonathon McDonald <jon@onewebcentric.com>
  */
 
-$redirect_page = 'http://iq-express.com/'; // Please enter an exact URL here
-$send_to       = 'jon@onewebcentric.com';  // Any valid email will work fine
+$redirect_page = 'http://iq-express.com/thanks'; // Please enter an exact URL here
+$send_to       = 'matt@onewebcentric.com';  // Any valid email will work fine
 $send_to_name  = 'Jonathon McDonald';      // Just a personal touch eh?
 
 if( isset( $_POST ) ) 
