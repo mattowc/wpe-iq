@@ -9,12 +9,13 @@ body {
 
 .logos {
 	display: block;
-	margin: 0 auto;
-	width: 260px;
 }
 
 .logos table, .logos table tr, .logos table tr td {
 	border: 0;
+}
+
+.logos table {
 	width: 100%;
 }
 
