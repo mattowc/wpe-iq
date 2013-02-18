@@ -48,6 +48,15 @@ footer {
 	margin-top: 150px;
 }
 
+a.onewebcentric {
+	width: 146px;
+	height: 30px;
+	background: url(../img/oneweb-logo.png);
+	display: inline-block;
+	position: relative;
+	top: 10px;
+}
+
 /*******************************************************
 * Header
 *******************************************************/
@@ -65,13 +74,8 @@ footer {
 	margin-top: 5px;
 }
 
-a.onewebcentric {
-	width: 146px;
-	height: 30px;
-	background: url(../img/oneweb-logo.png);
-	display: inline-block;
-	position: relative;
-	top: 10px;
+h1 {
+	font-size: 40px;
 }
 
 /*******************************************************

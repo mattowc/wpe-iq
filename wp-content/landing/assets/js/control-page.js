@@ -1,123 +1,44 @@
 /**
- * This will simply test the progress bar
- * and see what it's worth.... ;)
+ * Uses namespace jm
+ *
+ * @author Jonathon McDonald <jon@onewebcentric.com>
  */
 var jm = {};
-
-jm.i = 0;
-jm.step = 1;
-jm.percentage = 33;
 jm.current = "home";
 
 /**
- * This actually sets up the progress bar
+ * Handle form validation
  */
 $(document).ready(function() {
-	$('.bar').width(jm.percentage + '%');
-});
-
-/**
- * This is for giving the form a very dynamic feel
- * and alive feel.  Currently form checking must happen at each step.
- */
-/*$(document).ready(function() {
-	$('.control-group').hide();
-	$('#' + jm.step).show();
-	
-	// Handle continue functionality
-	// This must check the form first
 	$('#continue').click(function(ev) {
-		// Prevent default behavior
+		// Stop submission
 		ev.preventDefault();
 
-		// Select the current form inputs
-		var curr = $('#' + jm.step + ' select').val();
+		// General error boolean, used to block/allow submission
+		var isError = false;
 
-		// console.log(curr);
-
-		// Prevent errors from progressing...
-		if((jm.step == 1 && curr == "Choose Student's Age Range") || (jm.step== 2 && curr == "Choose Learning Disability")) {
-			$('#' + jm.step).addClass('error');
-			$('#' + jm.step + ' select').click(function() {
-				$('#' + jm.step).removeClass('error');
-			});
-			return;
+		// First check the name
+		if ($('#input-name').val().length < 2) {
+			isError = true;
 		}
 
-		var errorInInput = false;
-
-		// If it's the last step, we should do some pretty interesting error checking...
-		$('#' + jm.step + ' input').each(function() {
-			if($(this).val() == "")
-			{
-				$('#' + jm.step).addClass('error');
-				$('#' + jm.step + ' input').click(function() {
-					$('#' + jm.step).removeClass('error');
-				});
-
-				errorInInput = true;
-				return; // This just returns from the current function :\...
-			}
-		});
-
-		if(errorInInput)
-			return;
-
-		// Hide the current step, and show the next
-		$('#' + jm.step).hide();
-
-		// Let google analytics know that this step was completed
-		_gaq.push(['_trackEvent', 'Hero Form', 'Step Completed', 'Step #' + jm.step + ' Completed']);
-
-		// Besides the event we want to also track goal completion...
-		_gaq.push(['_trackPageview', '/step' + jm.step + '.html']); 
-
-		// Next let's move to the next step
-		jm.step++;
-		$('#' + jm.step).show();
-
-		// Next let's increment the progress
-		jm.percentage = (jm.step == 3) ? 100 : 33 * jm.step;
-		$('.bar').width(jm.percentage + '%');
-
-		// If this is the last step, we actually want to remove the click handler
-		// and rename this to submit
-		if(jm.step == 3) {
-			$('form legend').html("The Last Step!");
-			$('#continue').html("Submit");
+		// Next check the email
+		if (!jm.validateEmail($('#input-email').val())) {
+			isError = true;
 		}
 
-		if(jm.step == 4) {
-			$('#core-form').submit();
+		// Lastly check the phone
+		if (!jm.validatePhone($)) {
+			isError = true;
+		}
+
+		// If there are any errors, show them and return
+		if (!isError) {
+			$('.control-group').addClass('error');
+			return false;
 		}
 	});
-
-	// This goes back, but doesn't check the form
-	$('#back').click(function(ev) {
-		// Prevent default
-		ev.preventDefault();
-
-		// Don't allow the user to go behind step zero
-		if(jm.step == 1)
-			return;
-
-		// If we were at step three, we need to do some clean up
-		if(jm.step == 3) {
-			$('form legend').html("Get your personalized consultation in 3 easy steps");
-			$('#continue').html("Next");
-		}
-
-		// Hide the current step, and show the previous
-		$('#' + jm.step).hide();
-		jm.step--;
-		$('#' + jm.step).show();
-
-		// Next let's decrement the progress
-		jm.percentage = 33 * jm.step;
-		jm.i = 33 * jm.step;
-		$('.bar').width(jm.percentage + '%');
-	});
-});*/
+});
 
 /**
  * This is for working with the navigation.
@@ -152,4 +73,26 @@ $(document).ready(function() {
 	});
 });
 
+/**
+ * Validates email via regex.
+ *
+ * Found and used from:
+ * http://stackoverflow.com/questions/46155/validate-email-address-in-javascript
+ */
+jm.validateEmail = function(email) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+}
 
+/**
+ * Validates phone, based mostly on length.  
+ */
+jm.validatePhone = function(phone) {
+	phone = phone.replace(/[^0-9]/g, '');
+
+	if (phone.length < 10) {
+		return false;
+	} else {
+		return true;
+	}
+}
