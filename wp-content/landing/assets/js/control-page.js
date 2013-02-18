@@ -33,7 +33,7 @@ $(document).ready(function() {
 		}
 
 		// If there are any errors, show them and return
-		if (!isError) {
+		if (isError) {
 			$('.control-group').addClass('error');
 			return false;
 		}
