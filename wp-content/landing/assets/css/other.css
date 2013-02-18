@@ -4,12 +4,13 @@
 
 body {
 	background: #fff;
+	color: #000;
 }
 
 .logos {
 	display: block;
 	margin: 0 auto;
-	width: 229px;
+	width: 260px;
 }
 
 a, a:hover {
@@ -30,6 +31,10 @@ a, a:hover {
 	margin-top: 10px;
 	padding-top: 10px;
 	margin-bottom: 50px;
+}
+
+footer {
+	margin-top: 150px;
 }
 
 /*******************************************************
@@ -75,6 +80,11 @@ a.onewebcentric {
 	padding: 15px 0 15px 0;
 }
 
+legend {
+	font-size: 20px;
+	line-height: 30px;
+}
+
 form blockquote {
 	font-size: 14px;
 }
@@ -93,6 +103,26 @@ input[type="url"], input[type="search"],
 input[type="tel"], input[type="color"], 
 .uneditable-input {
 	border: 1px solid rgb(0, 163, 255);
+}
+
+.control-group.error .checkbox, .control-group.error .radio, 
+.control-group.error input, .control-group.error select, 
+.control-group.error textarea {
+	color: rgb(255, 5, 0);
+}
+
+.control-group.error input, .control-group.error select, 
+.control-group.error textarea {
+	border-color: rgb(255, 5, 0);
+}
+
+.control-group.error .control-label, .control-group.error .help-block, 
+.control-group.error .help-inline {
+	color: rgb(255, 5, 0);
+}
+
+.form-actions {
+	background-color: #f7f7f7;
 }
 
 /*******************************************************

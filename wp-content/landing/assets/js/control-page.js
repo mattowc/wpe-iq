@@ -20,7 +20,7 @@ $(document).ready(function() {
  * This is for giving the form a very dynamic feel
  * and alive feel.  Currently form checking must happen at each step.
  */
-$(document).ready(function() {
+/*$(document).ready(function() {
 	$('.control-group').hide();
 	$('#' + jm.step).show();
 	
@@ -117,7 +117,7 @@ $(document).ready(function() {
 		jm.i = 33 * jm.step;
 		$('.bar').width(jm.percentage + '%');
 	});
-});
+});*/
 
 /**
  * This is for working with the navigation.
