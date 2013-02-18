@@ -37,10 +37,16 @@ $(document).ready(function() {
 
 		// If there are any errors, show them and return
 		if (isError) {
+			// Any control groups with errors will have them removed on click
 			$('.error').click(function() {
 				$(this).removeClass('error');
 			});
+
+			// Return false
 			return false;
+		} else {
+			// No errors, proceed with submission
+			$('#core-form').submit();
 		}
 	});
 });

@@ -7,20 +7,16 @@
  */
 
 $redirect_page = 'http://iq-express.com/thanks'; // Please enter an exact URL here
-$send_to       = 'matt@onewebcentric.com';  // Any valid email will work fine
+$send_to       = 'jon@onewebcentric.com';  // Any valid email will work fine
 $send_to_name  = 'Jonathon McDonald';      // Just a personal touch eh?
 
 if( isset( $_POST ) ) 
 {
-	$age    = filter_var($_POST['adult-or-child'], FILTER_SANITIZE_STRING);
-	$ld     = filter_var($_POST['their-drop'], FILTER_SANITIZE_STRING);
 	$name   = filter_var($_POST['their-name'], FILTER_SANITIZE_STRING);
 	$email  = filter_var($_POST['their-email'], FILTER_SANITIZE_STRING);
 	$phone  = filter_var($_POST['their-phone'], FILTER_SANITIZE_STRING);
 
 	$email_body  = '<h1>IQ Express Landing Page Form Fill</h1>';
-	$email_body .= 'Age:  ' . $age . ' <br />';
-	$email_body .= 'Learning Disability:  ' . $ld . ' <br />';
 	$email_body .= 'Their Name:  ' . $name . ' <br />';
 	$email_body .= 'Their Email:  ' . $email . '<br />';
 	$email_body .= 'Their Phone:  ' . $phone . '<br />';
