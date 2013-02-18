@@ -28,7 +28,7 @@ $(document).ready(function() {
 		}
 
 		// Lastly check the phone
-		if (!jm.validatePhone($)) {
+		if (!jm.validatePhone($('#input-phone').val())) {
 			isError = true;
 		}
 
@@ -88,6 +88,10 @@ jm.validateEmail = function(email) {
  * Validates phone, based mostly on length.  
  */
 jm.validatePhone = function(phone) {
+	if (phone == null || phone.length < 1) {
+		return false;
+	}
+
 	phone = phone.replace(/[^0-9]/g, '');
 
 	if (phone.length < 10) {
