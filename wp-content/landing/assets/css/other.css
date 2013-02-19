@@ -46,6 +46,7 @@ a, a:hover {
 
 footer {
 	margin-top: 150px;
+	font-size: 12px;
 }
 
 a.onewebcentric {
@@ -143,6 +144,19 @@ input[type="tel"], input[type="color"],
 
 .form-actions {
 	background-color: #f7f7f7;
+}
+
+.control-group {
+	margin-bottom: 0;
+}
+
+legend + .control-group {
+	margin-top: 10px;
+}
+
+.form-actions {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 /*******************************************************
