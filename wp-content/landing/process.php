@@ -9,6 +9,14 @@
 $redirect_page = 'http://iq-express.com/thanks'; // Please enter an exact URL here
 $send_to       = 'jon@onewebcentric.com';  // Any valid email will work fine
 $send_to_name  = 'Jonathon McDonald';      // Just a personal touch eh?
+$mc_api_key    = '076c55011dd492fe23e0d531337452c7-us6';  // Mail Chimp API key
+$mc_list_id    = '6dd5a70f12';  // Mail Chimp unique list ID
+
+// Get the MailChimp API's
+require_once('assets/classes/MCAPI.class.php');
+
+// Create an API
+$api = new MCAPI($mc_api_key);
 
 if( isset( $_POST ) ) 
 {
@@ -30,6 +38,11 @@ if( isset( $_POST ) )
 	$email_headers .= 'From: IQ Express <support@iq-express.com>' . "\r\n";
 
     mail( $send_to, 'IQ Express Landing Page Fill', $email_body, $email_headers );
+
+    // Now that it's emailed out, let's push this to mail chimp
+    $mail_chimp_vars = array('NAME' => $name, 'PHONE' => $phone);
+    $api->listSubscribe( $mc_list_id, $email, $mail_chimp_vars );
+
 
 } 
 
