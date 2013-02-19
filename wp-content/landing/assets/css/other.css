@@ -187,6 +187,7 @@ legend + .control-group {
 .progress-warning.progress-striped .bar, .progress-striped .bar-warning {
 	background-color: #ff6900;
 }
+
 /*******************************************************
 * Icons
 *******************************************************/
@@ -195,6 +196,16 @@ legend + .control-group {
 	width: 16px;
 	height: 16px;
 	background: url(../img/phone.png);
+}
+
+/*******************************************************
+* Helpers
+*******************************************************/
+
+.pull-center {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 5px;
 }
 
 /*******************************************************
