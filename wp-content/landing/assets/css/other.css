@@ -208,6 +208,12 @@ legend + .control-group {
 	margin-bottom: 5px;
 }
 
+.text-center {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
 /*******************************************************
 * Media Queries
 *******************************************************/
