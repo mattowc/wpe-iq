@@ -2,7 +2,9 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
-RewriteRule ^lp-ms-dyslexia.*$ wp-content/landing/$ [PT]
+RewriteRule ^lp-ms-dyslexia.*$ wp-content/landing/ [PT]
+RewriteRule ^lp-ms-dyslexia/child.*$ wp-content/landing/child.html [PT]
+RewriteRule ^lp-ms-dyslexia/adult.*$ wp-content/landing/adult.html [PT]
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
