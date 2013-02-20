@@ -224,6 +224,7 @@ legend + .control-group {
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 5px;
+	margin-top: 5px;
 }
 
 .text-center {
