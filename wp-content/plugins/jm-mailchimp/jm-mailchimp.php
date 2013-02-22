@@ -19,4 +19,7 @@ require_once( JM_MC_PLUGIN_PATH . 'classes/JM_Options.php' );
 // Include contact form integration
 require_once( JM_MC_PLUGIN_PATH . 'classes/JM_Contact.php' );
 
+/*
+Matt was here
+*/
 ?>
