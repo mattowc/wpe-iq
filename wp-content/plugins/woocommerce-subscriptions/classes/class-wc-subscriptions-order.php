@@ -138,7 +138,7 @@ class WC_Subscriptions_Order {
 		if ( $trial_length > 0 && $order_total == $recurring_total )
 			$initial_payment = 0;
 		else
-			$initial_payment = $order_total + $order->order_shipping; // Order total already accounts for sign up fees when there is no trial period
+			$initial_payment = $order_total; // Order total already accounts for sign up fees when there is no trial period
 
 		return $initial_payment;
 	}
