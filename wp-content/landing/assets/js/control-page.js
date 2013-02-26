@@ -96,6 +96,13 @@ $(document).ready(function() {
 });
 
 /**
+ * This adds colorbox functionality for a vimeo video
+ */
+$(document).ready(function() {
+	$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:375});
+});
+
+/**
  * Validates email via regex.
  *
  * Found and used from:
