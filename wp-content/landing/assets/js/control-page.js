@@ -64,7 +64,7 @@ $(document).ready(function() {
 	{
 		$('.content[id]').each(function() {
 			if(this.id === window.location.hash.replace("#", "")) {
-				$('.content $' + jm.current).hide();
+				$('.content #' + jm.current).hide();
 				jm.current = this.id;
 			}
 		});
