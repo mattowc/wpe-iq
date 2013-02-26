@@ -71,7 +71,7 @@ $(document).ready(function() {
 	}
 
 	// Ensure the current element is being shown
-	$('#' + jm.current).show();
+	$('#' + jm.current + '.content').show();
 	$('#' + jm.current).parents().addClass('active');
 
 	// Now if a link is clicked we need to handle it
