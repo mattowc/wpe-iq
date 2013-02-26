@@ -334,8 +334,7 @@ legend h4 {
 }
 
 .ul-inline {
-	max-width: 350px;
-	width: 50%;
+	width: 42%;
 }
 
 .ul-inline li {
@@ -345,6 +344,12 @@ legend h4 {
 /*******************************************************
 * Media Queries
 *******************************************************/
+
+@media (max-width: 979px) and (min-width: 768px) {
+	.ul-inline {
+		width: 100%;
+	}
+}
 
 @media (max-width: 767px) {
 
