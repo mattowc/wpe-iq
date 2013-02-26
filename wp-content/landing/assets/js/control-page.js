@@ -63,7 +63,7 @@ $(document).ready(function() {
 	if(window.location.hash !== null && window.location.hash !== "")
 	{
 		$('.content[id]').each(function() {
-			if(this.id === window.location.hash) {
+			if(this.id === window.location.hash.replace("#", "")) {
 				jm.current = this.id;
 			}
 		});
