@@ -331,6 +331,9 @@ legend h4 {
 
 .img-inline, .ul-inline {
 	display: inline-block;
+	width: 45%;
+	height: auto;
+	max-width: 100%;
 }
 
 .ul-inline {
@@ -345,12 +348,6 @@ legend h4 {
 * Media Queries
 *******************************************************/
 
-@media (max-width: 979px) and (min-width: 768px) {
-	.ul-inline {
-		width: 100%;
-	}
-}
-
 @media (max-width: 767px) {
 
 	/* Header */
@@ -362,5 +359,15 @@ legend h4 {
 	
 	.phone {
 		text-align: center;
+	}
+}
+
+@media (max-width: 767px) {
+	.img-inline {
+		width: auto;
+	}
+
+	.ul-inline {
+		width: 100%;
 	}
 }
