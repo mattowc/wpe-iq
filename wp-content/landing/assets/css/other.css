@@ -88,6 +88,7 @@ a.onewebcentric {
 
 h1 {
 	font-size: 40px;
+	width: 500px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -204,8 +205,8 @@ legend h4 {
 
 .arrow {
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 10px;
+	left: -148px;
 }
 
 /*******************************************************
@@ -290,6 +291,21 @@ legend h4 {
 * Media Queries
 *******************************************************/
 
+@media (min-width: 1200px) {
+	h1 {
+		width: 100%;
+	}
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+	h1 {
+		width: 100%;
+	}
+	.arrow {
+		display: none;
+	}
+}
+
 @media (max-width: 767px) {
 
 	/* Header */
@@ -301,6 +317,14 @@ legend h4 {
 	
 	.phone {
 		text-align: center;
+	}
+
+	.arrow {
+		display: none;
+	}
+
+	h1 {
+		width: 100%;
 	}
 
 	/* Footer */ 
