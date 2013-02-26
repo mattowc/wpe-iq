@@ -99,7 +99,7 @@ $(document).ready(function() {
  * This adds colorbox functionality for a vimeo video
  */
 $(document).ready(function() {
-	$(".vimeo").colorbox({iframe:true, innerWidth:75%});
+	$(".vimeo").colorbox({iframe:true, innerWidth:'75%'});
 });
 
 /**
