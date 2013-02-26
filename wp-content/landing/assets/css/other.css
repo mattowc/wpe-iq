@@ -202,7 +202,7 @@ legend h4 {
 *******************************************************/
 
 .arrow {
-	display: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
 }
