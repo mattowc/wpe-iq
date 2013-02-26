@@ -203,10 +203,50 @@ legend h4 {
 * Form Arrow
 *******************************************************/
 
+/* .arrow represents the desktop arrow image */
 .arrow {
 	position: absolute;
 	top: 10px;
 	left: -148px;
+}
+
+/* .mobile-arrow represents the tablet and mobile phone arrow image */
+.mobile-arrow {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	display: none;
+}
+
+@media (min-width: 1200px) {
+	h1 {
+		width: 100%;
+	}
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+	h1 {
+		width: 100%;
+	}
+	.arrow {
+		display: none;
+	}
+	.mobile-arrow {
+		display: block;
+	}
+}
+
+@media (max-width: 767px) {
+	.arrow {
+		display: none;
+	}
+
+	h1 {
+		width: 100%;
+	}
+	.mobile-arrow {
+		display: block;
+	}
 }
 
 /*******************************************************
@@ -291,21 +331,6 @@ legend h4 {
 * Media Queries
 *******************************************************/
 
-@media (min-width: 1200px) {
-	h1 {
-		width: 100%;
-	}
-}
-
-@media (max-width: 979px) and (min-width: 768px) {
-	h1 {
-		width: 100%;
-	}
-	.arrow {
-		display: none;
-	}
-}
-
 @media (max-width: 767px) {
 
 	/* Header */
@@ -318,16 +343,4 @@ legend h4 {
 	.phone {
 		text-align: center;
 	}
-
-	.arrow {
-		display: none;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	/* Footer */ 
-
-
 }
