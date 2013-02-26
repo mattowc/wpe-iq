@@ -213,9 +213,10 @@ legend h4 {
 /* .mobile-arrow represents the tablet and mobile phone arrow image */
 .mobile-arrow {
 	position: absolute;
-	top: 10px;
-	left: 50%;
 	display: none;
+	top: -92px;
+	margin-left: -135px;
+	left: 50%;
 }
 
 @media (min-width: 1200px) {
@@ -234,6 +235,13 @@ legend h4 {
 	.mobile-arrow {
 		display: block;
 	}
+	.hero-form {
+		margin-top: 100px;
+	}
+
+	.hero-form legend {
+		margin-top: 10px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -246,6 +254,13 @@ legend h4 {
 	}
 	.mobile-arrow {
 		display: block;
+	}
+	.hero-form {
+		margin-top: 100px;
+	}
+
+	.hero-form legend {
+		margin-top: 10px;
 	}
 }
 
