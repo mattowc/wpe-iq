@@ -203,15 +203,19 @@ legend h4 {
 
 .btn-warning {
 	color: #fff;
+	font-family: Arial, "Lora",Georgia,"Times New Roman",Times,serif;
+	font-size: 22px;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
-	background-color: #ff6900;
-	background-image: -moz-linear-gradient(top,#fa9f1e,#ff6900);
-	background-image: -webkit-gradient(linear,0 0,0 100%,from(#fa9f1e),to(#ff6900));
-	background-image: -webkit-linear-gradient(top,#fa9f1e,#ff6900);
-	background-image: -o-linear-gradient(top,#fa9f1e,#ff6900);
-	background-image: linear-gradient(to bottom,#fa9f1e,#ff6900);
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: #ff6a00;
+	background-image: -moz-linear-gradient(top,#ff8400,#ff6a00);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#ff8400),to(#ff6a00));
+	background-image: -webkit-linear-gradient(top,#ff8400,#ff6a00);
+	background-image: -o-linear-gradient(top,#ff8400,#ff6a00);
+	background-image: linear-gradient(to bottom,#ff8400,#ff6a00);
 	background-repeat: repeat-x;
-	border-color: #ff6900 #ff6900 #ad6704;
+	border-color: #ff6a00;
 	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffa9f1e',endColorstr='#fff89406',GradientType=0);
 	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
