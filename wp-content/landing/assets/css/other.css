@@ -257,6 +257,10 @@ legend h4 {
 	text-align: center;
 }
 
+.img-inline, .ul-inline {
+	display: inline-block;
+}
+
 /*******************************************************
 * Media Queries
 *******************************************************/
