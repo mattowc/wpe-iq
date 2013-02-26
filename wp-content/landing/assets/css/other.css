@@ -123,6 +123,7 @@ h3.sub-header {
 	width:100%;  
 	border: 2px solid #ff6900; 
 	border-radius: 5px;
+	position: relative;
 }
 
 .hero-form form {
@@ -202,7 +203,7 @@ legend h4 {
 *******************************************************/
 
 .arrow {
-	position: relative;
+	position: absolute;
 	top: 0;
 	left: 0;
 }
