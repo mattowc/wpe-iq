@@ -59,6 +59,16 @@ $(document).ready(function() {
 	// Hides all content
 	$('.content:not(#' + jm.current + ')').hide();
 
+	// If a hash tag was supplied, assume and it matches a .content id, use it
+	if(window.location.hash !== null && window.location.hash !== "")
+	{
+		$('.content[id]').each(function() {
+			if(this.id === window.location.hash) {
+				jm.current = this.id;
+			}
+		});
+	}
+
 	// Ensure the current element is being shown
 	$('#' + jm.current).show();
 	$('#' + jm.current).parents().addClass('active');
