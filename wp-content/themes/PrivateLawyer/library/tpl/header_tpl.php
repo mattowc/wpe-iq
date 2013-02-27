@@ -2,7 +2,13 @@
 <?php  //templ_get_top_header_navigation() ?> 
 <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('header_above')){?>
 <?php } else {?>  <?php }?>
-
+<div id="info-header">
+    <div id="info-container">
+        <div id="info-wrap">
+            Call toll free (800) 893-9315 <span>or</span> <a href="#" id="info-btn">Get Started</a>
+        </div> <!-- End #info-wrap -->
+    </div> <!-- End #info-container -->
+</div> <!-- End #info-header -->
 <div class="wrapper">
 	<div class="header clear">
     	<div class="header_in">
