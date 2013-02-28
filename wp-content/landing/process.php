@@ -7,8 +7,8 @@
  */
 
 $redirect_page = 'http://iq-express.com/thanks'; // Please enter an exact URL here
-$send_to       = 'jon@onewebcentric.com';  // Any valid email will work fine
-$send_to_name  = 'Jonathon McDonald';      // Just a personal touch eh?
+$send_to       = 'support@iq-express.com';  // Any valid email will work fine
+$send_to_name  = 'Learning Technics';      // Just a personal touch eh?
 $mc_api_key    = '076c55011dd492fe23e0d531337452c7-us6';  // Mail Chimp API key
 $mc_list_id    = '6dd5a70f12';  // Mail Chimp unique list ID
 
