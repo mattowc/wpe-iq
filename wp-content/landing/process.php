@@ -9,8 +9,8 @@
 $redirect_page = 'http://iq-express.com/thanks'; // Please enter an exact URL here
 $send_to       = 'support@iq-express.com';  // Any valid email will work fine
 $send_to_name  = 'Learning Technics';      // Just a personal touch eh?
-$mc_api_key    = '076c55011dd492fe23e0d531337452c7-us6';  // Mail Chimp API key
-$mc_list_id    = '6dd5a70f12';  // Mail Chimp unique list ID
+$mc_api_key    = '585e14c24bd9acbbcf206966aa32e78b-us4';  // Mail Chimp API key
+$mc_list_id    = '498a1e6a7e';  // Mail Chimp unique list ID
 
 // Get the MailChimp API's
 require_once('assets/classes/MCAPI.class.php');
