@@ -336,6 +336,13 @@ legend h4 {
 	max-width: 100%;
 }
 
+.vid-inline {
+	display: inline-block;
+	width: 45%;
+	height: auto;
+	max-width: 100%;
+}
+
 .ul-inline {
 	width: 48.96%;
 }
@@ -365,6 +372,10 @@ legend h4 {
 @media (max-width: 480px) {
 	.img-inline {
 		width: auto;
+	}
+	
+	.vid-inline {
+		width: 100%;
 	}
 
 	.ul-inline {
